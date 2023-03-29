@@ -1,0 +1,55 @@
+.hero {
+	padding-top: 70px;
+	color: $color-black;
+	background-color: $color-hero-backgrond;
+
+	&__grid {
+		padding-bottom: 140px;
+		background-image: url("../images/background-photos/hero-background.png");
+		background-position: bottom right;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 65px;
+		line-height: 65px;
+		text-transform: uppercase;
+		color: $color-green;
+
+		span {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 26px;
+			text-transform: initial;
+			color: $color-black;
+		}
+	}
+
+	&__description {
+		margin-bottom: 60px;
+		max-width: 419px;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	&__button-block {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+@supports (background: url("../images/background-photos/hero-background.webp")) {
+	.hero__grid {
+		background-image: url("../images/background-photos/hero-background.webp");
+	}
+}
+
+@supports (background: url("../images/background-photos/hero-background.avif")) {
+	.hero__grid {
+		background-image: url("../images/background-photos/hero-background.avif");
+	}
+}
