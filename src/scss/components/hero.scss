@@ -53,3 +53,27 @@
 		background-image: url("../images/background-photos/hero-background.avif");
 	}
 }
+
+@media (max-width: $desktop-width) {
+	.hero {
+		&__grid {
+			background-position: bottom right -40%;
+		}
+
+		&__title {
+			font-size: 52px;
+			line-height: 100%;
+		}
+
+		&__button-block {
+			display: flex;
+			flex-direction: column;
+			width: fit-content;
+			gap: 20px;
+		}
+
+		&__info-link {
+			width: 100%;
+		}
+	}
+}

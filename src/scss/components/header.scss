@@ -154,7 +154,7 @@
 	}
 }
 
-@media (max-width: 1080px) {
+@media (max-width: $desktop-width) {
 	.header {
 		&__decoration-line {
 			display: none;
