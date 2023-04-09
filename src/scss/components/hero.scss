@@ -57,19 +57,48 @@
 @media (max-width: $desktop-width) {
 	.hero {
 		&__grid {
-			background-position: bottom right -40%;
+			padding-bottom: 90px;
+			background-position: bottom right -5%;
+		}
+
+		&__pre-title {
+			display: none;
+		}
+
+		&__title br:first-of-type {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: $tablet-width) {
+	.hero {
+		&__grid {
+			padding-right: 60px;
+			padding-bottom: 30px;
+			padding-left: 60px;
 		}
 
 		&__title {
-			font-size: 52px;
+			font-size: 40px;
 			line-height: 100%;
+		}
+
+		&__description {
+			margin-bottom: 20px;
+			width: 293px;
+			font-size: 14px;
 		}
 
 		&__button-block {
 			display: flex;
 			flex-direction: column;
 			width: fit-content;
-			gap: 20px;
+		}
+
+		&__button-block .button {
+			padding: 15px 25px;
+			font-size: 15px;
 		}
 
 		&__info-link {
