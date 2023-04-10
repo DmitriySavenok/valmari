@@ -15,6 +15,10 @@ $color-hero-backgrond: #ecffeb;
 // $font-primary: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 $font-primary: "Montserrat";
 
+// Layers
+$layer-1: 1;
+$layer-2: 10;
+
 // EASING TRANSITIONS
 $duration-normal: 0.4s;
 $easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.com/#.25,.74,.22,1.1
