@@ -14,19 +14,20 @@
 	&__title {
 		margin-top: 0;
 		margin-bottom: 20px;
+		max-width: 496px;
 		font-weight: 700;
 		font-size: 65px;
 		line-height: 65px;
 		text-transform: uppercase;
 		color: $color-green;
+	}
 
-		span {
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 26px;
-			text-transform: initial;
-			color: $color-black;
-		}
+	&__pre-title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		text-transform: initial;
+		color: $color-black;
 	}
 
 	&__description {
@@ -65,7 +66,7 @@
 			display: none;
 		}
 
-		&__title br:first-of-type {
+		&__title br {
 			display: none;
 		}
 	}
@@ -103,6 +104,45 @@
 
 		&__info-link {
 			width: 100%;
+		}
+	}
+}
+
+@media (max-width: $smartphone-width) {
+	.hero {
+		padding-top: 20px;
+
+		&__grid {
+			padding-right: 0;
+			padding-bottom: 40px;
+			padding-left: 0;
+			background-position: bottom right -10%;
+			background-size: 50%;
+		}
+
+		&__title br {
+			display: none;
+		}
+
+		&__title {
+			font-size: 24px;
+			line-height: 100%;
+		}
+
+		&__pre-title {
+			display: block;
+			font-size: 12px;
+		}
+
+		&__description {
+			margin-bottom: 20px;
+			width: 50%;
+			font-size: 12px;
+		}
+
+		&__button-block .button {
+			padding: 10px 25px;
+			font-size: 12px;
 		}
 	}
 }
