@@ -6,6 +6,10 @@ $color-white: #fff;
 $color-gray: #eee;
 $color-green: #55a630;
 
+$color-button-hover: #478f26;
+
+$color-hero-backgrond: #ecffeb;
+
 // FONTS
 // stylelint-disable-next-line
 // $font-primary: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -17,6 +21,12 @@ $easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.co
 $easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
 $easing-out: ease-out;
 $easing-in: ease-in;
+
+// Screen width
+$desktop-width: 1200px;
+$tablet-width: 1000px;
+$smartphone-width: 768px;
+$small-screen-width: 480px;
 
 // Settings
 $desktop: 1025;

@@ -1,0 +1,174 @@
+.hero {
+	padding-top: 70px;
+	color: $color-black;
+	background-color: $color-hero-backgrond;
+
+	&__grid {
+		padding-bottom: 140px;
+		background-image: url("../images/background-photos/hero-background.png");
+		background-position: bottom right;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 20px;
+		max-width: 496px;
+		font-weight: 700;
+		font-size: 65px;
+		line-height: 65px;
+		text-transform: uppercase;
+		color: $color-green;
+	}
+
+	&__pre-title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		text-transform: initial;
+		color: $color-black;
+	}
+
+	&__description {
+		margin-bottom: 60px;
+		max-width: 419px;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	&__button-block {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+@supports (background: url("../images/background-photos/hero-background.webp")) {
+	.hero__grid {
+		background-image: url("../images/background-photos/hero-background.webp");
+	}
+}
+
+@supports (background: url("../images/background-photos/hero-background.avif")) {
+	.hero__grid {
+		background-image: url("../images/background-photos/hero-background.avif");
+	}
+}
+
+@media (max-width: $desktop-width) {
+	.hero {
+		&__grid {
+			padding-bottom: 90px;
+			background-position: bottom right -5%;
+		}
+
+		&__pre-title {
+			display: none;
+		}
+
+		&__title br {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: $tablet-width) {
+	.hero {
+		&__grid {
+			padding-right: 60px;
+			padding-bottom: 30px;
+			padding-left: 60px;
+		}
+
+		&__title {
+			font-size: 40px;
+			line-height: 100%;
+		}
+
+		&__description {
+			margin-bottom: 20px;
+			width: 293px;
+			font-size: 14px;
+		}
+
+		&__button-block {
+			display: flex;
+			flex-direction: column;
+			width: fit-content;
+		}
+
+		&__button-block .button {
+			padding: 15px 25px;
+			font-size: 15px;
+		}
+
+		&__info-link {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: $smartphone-width) {
+	.hero {
+		padding-top: 20px;
+
+		&__grid {
+			padding-right: 0;
+			padding-bottom: 40px;
+			padding-left: 0;
+			background-position: bottom right -10%;
+			background-size: 50%;
+		}
+
+		&__title br {
+			display: none;
+		}
+
+		&__title {
+			font-size: 24px;
+			line-height: 100%;
+		}
+
+		&__pre-title {
+			display: block;
+			font-size: 12px;
+		}
+
+		&__description {
+			margin-bottom: 20px;
+			width: 50%;
+			font-size: 12px;
+		}
+
+		&__button-block .button {
+			padding: 10px 25px;
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: $small-screen-width) {
+	.hero {
+		&__grid {
+			padding-bottom: 65%;
+			background-position: bottom center;
+			background-size: 80%;
+		}
+
+		&__info-block,
+		&__description {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+
+		&__title:not(span) {
+			font-size: 30px;
+		}
+
+		&__button-block {
+			margin: 0 auto;
+			gap: 12px;
+		}
+	}
+}

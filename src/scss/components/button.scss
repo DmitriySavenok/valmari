@@ -1,0 +1,36 @@
+.button {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 40px;
+	width: fit-content;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.button--fill-bg {
+	color: $color-white;
+	background-color: $color-green;
+}
+
+.button--transparent-bg {
+	border: 1px solid $color-green;
+	box-sizing: border-box;
+	color: $color-green;
+	background-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.button--fill-bg:hover {
+		background-color: $color-button-hover;
+	}
+
+	.button--transparent-bg:hover {
+		border: 1px solid $color-button-hover;
+		color: $color-white;
+		background-color: $color-button-hover;
+	}
+}
