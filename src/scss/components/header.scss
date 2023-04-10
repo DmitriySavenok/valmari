@@ -188,6 +188,7 @@
 	}
 
 	&--opened .header__phone {
+		display: flex;
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 	}
@@ -323,6 +324,25 @@
 
 		&--opened .header__toggle-button .down-line {
 			transform: rotate(-45deg) translateX(0) translateY(-14px);
+		}
+	}
+}
+
+@media (max-width: $small-screen-width) {
+	.header {
+		&__grid {
+			grid-template-columns: auto auto;
+		}
+
+		&__logo {
+			position: static;
+			grid-column: 2 / 3;
+			margin: auto;
+			transform: translateX(0);
+		}
+
+		&__phone {
+			display: none;
 		}
 	}
 }
