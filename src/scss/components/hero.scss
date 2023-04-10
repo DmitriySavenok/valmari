@@ -146,3 +146,29 @@
 		}
 	}
 }
+
+@media (max-width: $small-screen-width) {
+	.hero {
+		&__grid {
+			padding-bottom: 65%;
+			background-position: bottom center;
+			background-size: 80%;
+		}
+
+		&__info-block,
+		&__description {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+
+		&__title:not(span) {
+			font-size: 30px;
+		}
+
+		&__button-block {
+			margin: 0 auto;
+			gap: 12px;
+		}
+	}
+}
