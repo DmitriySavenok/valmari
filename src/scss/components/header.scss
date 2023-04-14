@@ -85,12 +85,45 @@
 		grid-row: 1 / 2;
 	}
 
-	&__language-select {
-		display: flex;
-		align-items: center;
+	.choices__inner {
 		border: none;
-		font-size: 32px;
-		background: transparent;
+		font-size: 36px;
+		background-color: transparent;
+	}
+
+	.choices__list {
+		border: none;
+		width: fit-content;
+		background-color: $color-white;
+	}
+
+	.choices__list--single .choices__item.choices__item--selectable {
+		margin-right: 8px;
+	}
+
+	.choices__list--dropdown {
+		left: 7px;
+	}
+
+	.choices__item.choices__item--choice {
+		padding: 10px;
+		font-size: 24px;
+	}
+
+	.choices[data-type*="select-one"]::after {
+		content: "";
+		margin-top: -7.5px;
+		border-style: none;
+		border-top: 2px solid $color-green;
+		border-right: 2px solid $color-green;
+		width: 11px;
+		height: 11px;
+		transform: rotate(135deg);
+	}
+
+	.choices[data-type*="select-one"].is-open::after {
+		margin-top: -3.5px;
+		transform: rotate(-45deg);
 	}
 
 	&__country-icon {

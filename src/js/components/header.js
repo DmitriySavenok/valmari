@@ -16,7 +16,8 @@ function openHeaderMenu() {
 function languageSelect() {
 	const element = document.querySelector('.header__language-select');
 	const choices = new Choices(element, {
-		searchEnabled: false
+		searchEnabled: false,
+		itemSelectText: ''
 	});
 }
 
