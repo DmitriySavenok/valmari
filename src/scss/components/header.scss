@@ -85,10 +85,11 @@
 		grid-row: 1 / 2;
 	}
 
-	&__language-button {
+	&__language-select {
 		display: flex;
 		align-items: center;
 		border: none;
+		font-size: 32px;
 		background: transparent;
 	}
 

@@ -3,6 +3,7 @@ import './helpers';
 import './components/social';
 import {ieFix} from './vendor/ie-fix';
 import {vhFix} from './vendor/vh-fix';
+import './vendor/choices.min';
 import {actualYear} from './modules/actualYear';
 import header from './components/header';
 import lazyLoading from './modules/lazyLoading';
@@ -14,4 +15,5 @@ actualYear();
 scrollToAnchor.init();
 
 header.openHeaderMenu();
+header.languageSelect();
 lazyLoading.init();
