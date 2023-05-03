@@ -6,6 +6,7 @@ import {vhFix} from './vendor/vh-fix';
 import './vendor/choices.min';
 import {actualYear} from './modules/actualYear';
 import header from './components/header';
+import course from'./components/course';
 import lazyLoading from './modules/lazyLoading';
 import scrollToAnchor from './modules/scrollToAnchor';
 
@@ -16,4 +17,5 @@ scrollToAnchor.init();
 
 header.openHeaderMenu();
 header.languageSelect();
+course.courseSlider();
 lazyLoading.init();

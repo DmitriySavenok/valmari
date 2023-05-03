@@ -158,6 +158,13 @@ iframe {
 	min-height: var(--vh);
 }
 
+.section-title {
+	font-weight: 600;
+	font-size: 35px;
+	text-align: center;
+	color: $color-black;
+}
+
 /* stylelint-disable */
 /*
 * Немедленно переместите любую анимацию в конечную точку, если пользователь установил свое устройство в положение "prefers reduced motion".
