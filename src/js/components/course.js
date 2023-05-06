@@ -39,6 +39,7 @@ function courseSlider() {
 				slidesPerView: 3,
 				slidesPerGroup: 1,
 				initialSlide: 0,
+				spaceBetween: 60,
 				centeredSlides: false,
 			}
 		}
