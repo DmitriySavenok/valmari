@@ -231,6 +231,12 @@
 	}
 }
 
+@media (hover: hover) and (pointer: fine) {
+	.slider-card__button:hover {
+		filter: contrast(75%);
+	}
+}
+
 @supports (background: url("../images/background-photos/course-background-1.webp")) {
 	.course {
 		background-image: url("../images/background-photos/course-background-1.webp");

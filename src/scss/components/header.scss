@@ -170,6 +170,11 @@
 
 // Стили для хедера при открытом меню
 .header__menu {
+	&--opened main {
+		position: fixed;
+		overflow: hidden;
+	}
+
 	&--opened .site::after {
 		content: "";
 		position: absolute;
@@ -258,11 +263,13 @@
 			opacity: 0.3;
 		}
 
-		&__social-networks-link:hover {
+		&__social-networks-link:hover,
+		&__phone-number:hover {
 			opacity: 0.7;
 		}
 
-		&__social-networks-link:active {
+		&__social-networks-link:active,
+		&__phone-number:active {
 			opacity: 0.3;
 		}
 	}
@@ -377,6 +384,11 @@
 
 		&__phone {
 			display: none;
+		}
+
+		&__menu--opened .header__grid {
+			overflow-y: scroll;
+			height: 100vh;
 		}
 	}
 }
