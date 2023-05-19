@@ -1,7 +1,7 @@
 import Swiper, { Navigation, Pagination } from "swiper";
 
 function courseSlider() {
-	const swiper = new Swiper('.swiper', {
+	const swiper = new Swiper('.course__slider-container', {
 		modules: [Navigation, Pagination],
 		direction: 'horizontal',
 		autoHeight: true,
@@ -10,13 +10,11 @@ function courseSlider() {
 		slidesPerView: 1.2,
 		slidesPerGroup: 1,
 		initialSlide: 1,
-		centeredSlides: true,
 
 		// If we need pagination
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
-			clickable: true,
 		},
 		// Navigation arrows
 		navigation: {
@@ -28,9 +26,6 @@ function courseSlider() {
 			480: {
 				slidesPerView: 2,
 				centeredSlides: true,
-			},
-
-			480: {
 				loop: true,
 			},
 
