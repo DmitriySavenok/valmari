@@ -123,6 +123,129 @@
 	background-image: url("../images/background-photos/training-link-backgrounds/stocks.jpg");
 }
 
+@media (hover: hover) and (pointer: fine) {
+	.training__link:hover {
+		background-size: 150%;
+	}
+
+	.training__grid-row--1 {
+		.training__link:hover .training__link-list {
+			width: auto;
+			height: auto;
+			font-size: 18px;
+		}
+
+		.training__link:hover .training__link-content {
+			display: grid;
+			justify-content: space-between;
+			grid-template-columns: auto 90px;
+			grid-template-rows: max-content auto;
+		}
+
+		.training__link:hover .training__link-arrow-icon {
+			width: auto;
+		}
+	}
+}
+
+@media (max-width: $tablet-width) {
+	.training {
+		background-image: url("../images/background-photos/course-background.png");
+		background-position: bottom left;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transform: scale(-1, 1);
+
+		.container {
+			transform: scale(-1, 1);
+		}
+
+		&__title {
+			font-size: 30px;
+		}
+
+		&__grid {
+			gap: 28px;
+		}
+
+		&__grid-row {
+			grid-auto-rows: minmax(200px, auto);
+			gap: 28px;
+		}
+
+		&__link {
+			background-size: cover;
+		}
+
+		&__link-name {
+			font-size: 25px;
+		}
+	}
+
+	@supports (background: url("../images/background-photos/course-background-1.webp")) {
+		.training {
+			background-image: url("../images/background-photos/course-background-1.webp");
+		}
+	}
+}
+
+@media (max-width: $smartphone-width) {
+	.training {
+		padding: 70px 0;
+
+		&__title {
+			margin-bottom: 50px;
+			font-size: 25px;
+		}
+
+		&__grid {
+			gap: 20px;
+		}
+
+		&__grid-row {
+			grid-auto-rows: minmax(148px, auto);
+			gap: 20px;
+		}
+
+		&__grid-row--1 {
+			grid-template-columns: 1fr;
+		}
+
+		&__grid-row--2 {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__link-content {
+			flex-direction: column-reverse;
+		}
+
+		&__grid-row--2 .training__link:nth-child(even) .training__link-content {
+			flex-direction: column-reverse;
+		}
+
+		&__grid-row--2 .training__link:nth-child(3) {
+			grid-column: 1 / 3;
+		}
+
+		&__link-name {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: $small-screen-width) {
+	.training {
+		&__title {
+			margin-bottom: 40px;
+			font-size: 20px;
+		}
+
+		&__link-name {
+			font-size: 14px;
+		}
+	}
+}
+
 @supports (background-image: url("../images/background-photos/training-link-backgrounds/cosmetology-courses.webp")) {
 	.training__cosmetology-courses {
 		background-image: url("../images/background-photos/training-link-backgrounds/cosmetology-courses.webp");
@@ -150,30 +273,5 @@
 @supports (background-image: url("../images/background-photos/training-link-backgrounds/stocks.webp")) {
 	.training__stocks {
 		background-image: url("../images/background-photos/training-link-backgrounds/stocks.webp");
-	}
-}
-
-@media (hover: hover) and (pointer: fine) {
-	.training__link:hover {
-		background-size: 150%;
-	}
-
-	.training__grid-row--1 {
-		.training__link:hover .training__link-list {
-			width: auto;
-			height: auto;
-			font-size: 18px;
-		}
-
-		.training__link:hover .training__link-content {
-			display: grid;
-			justify-content: space-between;
-			grid-template-columns: auto 90px;
-			grid-template-rows: max-content auto;
-		}
-
-		.training__link:hover .training__link-arrow-icon {
-			width: auto;
-		}
 	}
 }
