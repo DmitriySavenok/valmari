@@ -147,6 +147,8 @@
 
 @media (max-width: $small-screen-width) {
 	.about {
+		padding-top: 20px;
+
 		&__section-type,
 		&__section-title,
 		&__description {
