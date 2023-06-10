@@ -225,8 +225,17 @@
 			}
 		}
 
-		.swiper-pagination-bullet {
-			background-color: $color-green;
+		&-pagination {
+			.swiper-pagination-bullet {
+				width: 15px;
+				height: 15px;
+				background-color: $color-green;
+				opacity: 0.4;
+			}
+
+			.swiper-pagination-bullet-active {
+				opacity: 1;
+			}
 		}
 	}
 }

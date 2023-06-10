@@ -15,6 +15,10 @@
 	border: none;
 	color: $color-white;
 	background-color: $color-green;
+
+	svg {
+		fill: $color-white;
+	}
 }
 
 .button--transparent-bg {
@@ -22,6 +26,10 @@
 	box-sizing: border-box;
 	color: $color-green;
 	background-color: transparent;
+
+	svg {
+		fill: $color-green;
+	}
 }
 
 @media (hover: hover) and (pointer: fine) {

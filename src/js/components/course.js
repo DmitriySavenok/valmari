@@ -13,13 +13,13 @@ function courseSlider() {
 
 		// If we need pagination
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.course__slider-pagination',
 			type: 'bullets',
 		},
 		// Navigation arrows
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			prevEl: '.course__slider-button-prev',
+			nextEl: '.course__slider-button-next',
 		},
 
 		breakpoints: {
