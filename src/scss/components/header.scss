@@ -85,11 +85,45 @@
 		grid-row: 1 / 2;
 	}
 
-	&__language-button {
-		display: flex;
-		align-items: center;
+	.choices__inner {
 		border: none;
-		background: transparent;
+		font-size: 36px;
+		background-color: transparent;
+	}
+
+	.choices__list {
+		border: none;
+		width: fit-content;
+		background-color: $color-white;
+	}
+
+	.choices__list--single .choices__item.choices__item--selectable {
+		margin-right: 8px;
+	}
+
+	.choices__list--dropdown {
+		left: 7px;
+	}
+
+	.choices__item.choices__item--choice {
+		padding: 10px;
+		font-size: 24px;
+	}
+
+	.choices[data-type*="select-one"]::after {
+		content: "";
+		margin-top: -7.5px;
+		border-style: none;
+		border-top: 2px solid $color-green;
+		border-right: 2px solid $color-green;
+		width: 11px;
+		height: 11px;
+		transform: rotate(135deg);
+	}
+
+	.choices[data-type*="select-one"].is-open::after {
+		margin-top: -3.5px;
+		transform: rotate(-45deg);
 	}
 
 	&__country-icon {
@@ -136,6 +170,11 @@
 
 // Стили для хедера при открытом меню
 .header__menu {
+	&--opened main {
+		position: fixed;
+		overflow: hidden;
+	}
+
 	&--opened .site::after {
 		content: "";
 		position: absolute;
@@ -224,11 +263,13 @@
 			opacity: 0.3;
 		}
 
-		&__social-networks-link:hover {
+		&__social-networks-link:hover,
+		&__phone-number:hover {
 			opacity: 0.7;
 		}
 
-		&__social-networks-link:active {
+		&__social-networks-link:active,
+		&__phone-number:active {
 			opacity: 0.3;
 		}
 	}
@@ -343,6 +384,11 @@
 
 		&__phone {
 			display: none;
+		}
+
+		&__menu--opened .header__grid {
+			overflow-y: scroll;
+			height: 100vh;
 		}
 	}
 }
